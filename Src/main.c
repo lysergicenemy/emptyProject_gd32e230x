@@ -39,23 +39,23 @@ void SysTick_Handler(void)
 //
 // USART DMA RX ISR
 //
-void DMA0_Channel4_IRQHandler(void)
+void DMA_Channel3_4_IRQHandler(void)
 {
-    if (dma_flag_get(DMA_CH4, DMA_INTF_FTFIF) == SET)
+    if (dma_flag_get(DMA_CH3, DMA_INTF_FTFIF) == SET)
     {
-        dma_flag_clear(DMA_CH4, DMA_INTF_FTFIF);
-        dma_channel_disable(DMA_CH4);
+        dma_flag_clear(DMA_CH3, DMA_INTF_FTFIF);
+        dma_channel_disable(DMA_CH3);
     }
 }
 
 //
 // USART DMA TX ISR
 //
-void DMA0_Channel3_IRQHandler(void)
+void DMA_Channel1_2_IRQHandler(void)
 {
-    if (dma_flag_get(DMA_CH3, DMA_INTF_FTFIF) == SET)
+    if (dma_flag_get(DMA_CH2, DMA_INTF_FTFIF) == SET)
     {
-        dma_flag_clear(DMA_CH3, DMA_FLAG_G);
-        dma_channel_disable(DMA_CH3);
+        dma_flag_clear(DMA_CH2, DMA_FLAG_G);
+        dma_channel_disable(DMA_CH2);
     }
 }
