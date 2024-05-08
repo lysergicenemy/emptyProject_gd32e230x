@@ -1,0 +1,11 @@
+{
+	"cortex-debug.enableTelemetry": false,
+	"cortex-debug.JLinkGDBServerPath": "C:/Program Files/SEGGER/JLink/JLinkGDBServerCL.exe",
+	"files.associations": {
+		"main.h": "c",
+		"math.h": "c",
+		"rmu.h": "c",
+		"sysconfig.h": "c"
+	},
+	"cortex-debug.variableUseNaturalFormat": true
+}

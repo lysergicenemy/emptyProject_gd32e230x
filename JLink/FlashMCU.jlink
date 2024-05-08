@@ -1,0 +1,6 @@
+r
+loadbin build\encoder_gd32.bin, 0x08000000
+verifybin build\encoder_gd32.bin, 0x08000000
+r
+g
+q

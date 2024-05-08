@@ -1,0 +1,31 @@
+{
+    "configurations": [
+        {
+            "name": "arm_c_cpp_properties",
+            "compilerPath": "D:/embedded_gcc/arm_gcc/bin/arm-none-eabi-gcc.exe",
+            "includePath": [
+                "D:/embedded_gcc/arm_gcc/arm-none-eabi/include",
+                "D:/embedded_gcc/arm_gcc/arm-none-eabi/include/sys/",
+                "D:/embedded_gcc/arm_gcc/lib/**",
+                "${workspaceRoot}/Drivers/**",
+                "${workspaceRoot}/Inc/**",
+                "${workspaceRoot}/Src/**"
+            ],
+            "defines": [
+                "GD32E230",
+                "M23",
+                "GD32E23X",
+                "GCC_ARMCM4",
+                "_GNU_SOURCE"
+            ],
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "compilerArgs": [
+                "-fsingle-precision-constant",
+                "-Wdouble-promotion"
+            ],
+            "intelliSenseMode": "gcc-arm"
+        }
+    ],
+    "version": 4
+}
